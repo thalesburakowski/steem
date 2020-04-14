@@ -17,8 +17,6 @@ class SequelizeAdapter {
       limit
     })
 
-    console.log(result)
-
     return {
       pages: Math.ceil(result.count / limit),
       [`${this.Model.name}s`]: result.rows
