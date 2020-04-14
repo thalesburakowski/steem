@@ -25,23 +25,23 @@ class User extends Model {
         },
         country: {
           type: DataTypes.STRING,
-          allowNull: false
+          allowNull: true
         },
         state: {
           type: DataTypes.STRING,
-          allowNull: false
+          allowNull: true
         },
         city: {
           type: DataTypes.STRING,
-          allowNull: false
+          allowNull: true
         },
         avatar: {
           type: DataTypes.STRING,
-          allowNull: false
+          allowNull: true
         },
         bio: {
           type: DataTypes.STRING,
-          allowNull: false
+          allowNull: true
         }
       },
       { sequelize }
